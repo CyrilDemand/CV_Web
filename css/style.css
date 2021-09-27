@@ -1,0 +1,44 @@
+body{
+    background-color: #406334;
+    margin: 0px;
+    color: beige;
+}
+
+header{
+    background-color: #406334;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+#menu>ul{
+    padding: 0px;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+#menu>ul>li{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+#menu>ul>li:hover{
+    background-color: darkgreen;
+}
+
+#moi,.formation, .loisirs{
+    background-color: darkolivegreen;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#git{
+    height: 40px;
+}
+

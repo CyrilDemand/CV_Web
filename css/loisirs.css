@@ -1,0 +1,54 @@
+.loisirs{
+    height: 500px;
+}
+
+.loisirs li{
+    height: 300px;
+}
+.loisirs ul li{
+    display: inline-block;
+}
+
+.loisirs div{
+    background-image: url("https://images.rtl.fr/~c/2000v2000/rtl/www/1176454-des-personnes-jouent-a-un-jeu-video.jpg");
+    position: relative;
+    width: 400px;
+    float: left;
+    margin: 4px;
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.loisirs div:hover{
+    background-size: 110%;
+}
+
+.loisirs div:after{
+    position: absolute;
+    top: 95%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: white;
+    padding: 0 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    content:attr(data-text);
+    font-size: larger;
+    transition: 0.75s;
+}
+
+.loisirs div:hover:after{
+    top: 0;
+    padding: 8px;
+}
+
+.loisirs div::first-line{
+    color: #000;
+}
+
