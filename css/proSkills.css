@@ -9,10 +9,10 @@
     display: inline-block;
 }
 
-#compétences ul>li .content{
+#compétences ul>li #content{
     position:absolute;
     background-color: rgb(55, 70, 30);
-    width: 150px;
+    width: 15%;
     margin-left: 5%;
     padding: 20px;
     box-sizing: border-box;
@@ -22,12 +22,14 @@
     transition: 0.5s;
     transform: translateX(-50%) translateY(-50px);
 }
-
+#compétences ul>li h2{
+    text-align: center;
+}
 #compétences ul>li>img{
   padding-top: 20px;
 }
 
-#compétences ul>li:hover .content{
+#compétences ul>li:hover #content{
     padding: auto;
     color: black;
     visibility:visible;

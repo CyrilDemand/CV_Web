@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/proSkills.css">
-    <link rel="stylesheet" href="/css/formation.css">
-    <link rel="stylesheet" href="/css/loisirs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proSkills.css">
+    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/loisirs.css">
 </head>
     <body>
     <header>
@@ -15,10 +15,10 @@
     </header>
     <div id="menu">
         <ul>
-            <li>à propos de moi</li>
-            <li>compétences</li>
-            <li>formation</li>
-            <li>loisirs</li>
+            <a href="#moi"><li>à propos de moi</li></a>
+            <a href="#compétences"><li>compétences</li></a>
+            <a href="#formation"><li>formation</li></a>
+            <a href="#loisirs"><li>loisirs</li></a>
         </ul>
     </div>
 
@@ -37,33 +37,33 @@
             <hr>
             <ul>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>html 5</h2>
                     </div>
                     <img id="imageComp" src="img/html5.png" alt="html5">
                 </li>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>css 3</h2>
                     </div>
                     <img id="imageComp" src="img/css3.png" alt="css3">
                 </li>
                 <li>
-                    <div class="test">
-                        <div class="content">
+                    <div id="test">
+                        <div id="content">
                             <h2>C</h2>
                         </div>
                         <img id="imageComp" src="img/C.png" alt="C">
                     </div>
                 </li>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>sql</h2>
                     </div>
                     <img id="imageComp" src="img/sql.png" alt="sql">
                 </li>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>java</h2>
                     </div>
                     <img id="imageComp" src="img/java.png" alt="java">
@@ -76,33 +76,45 @@
             <hr>
             <ul>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>méthode agile</h2>
                     </div>
                     <img id="imageComp" src="img/agile.jpg" alt="agile">
                 </li>
                 <li>
-                    <div class="content">
+                    <div id="content">
                         <h2>ponctualité</h2>
                     </div>
                     <img id="imageComp" src="img/ponctuel.png" alt="agile">
+                </li>
+                <li>
+                    <div id="content">
+                        <h2>patience</h2>
+                    </div>
+                    <img id="imageComp" src="img/sablier.jpg" alt="agile">
+                </li>
+                <li>
+                    <div id="content">
+                        <h2>communication</h2>
+                    </div>
+                    <img id="imageComp" src="img/communication.jpg" alt="agile">
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="formation">
+    <div id="formation">
         <h1>Formation</h1>
         <ul>
             <li>
-                <div class="formation_content">
+                <div id="formation_content">
                     <h2>DUT informatique</h2>
                     <p>2020-2022</p>
                 </div>
             </li>
 
             <li>
-                <div class="formation_content">
+                <div id="formation_content">
                     <h2>Baccalauréat Scientifique option Science de L'ingénieurie</h2>
                     <p>2017-2020</p>
                     <p>mention bien</p>
@@ -111,18 +123,30 @@
         </ul>
     </div>
 
-    <div class="loisirs">
+    <div id="loisirs">
         <h1>loisirs</h1>
         <ul>
             <li>
-                <div class="textOverLoisirs" data-text="Jeux Vidéos &#xa;J'aime beaucoup les jeux-vidéos,que ce soit compétitif ou non. Je joue la plupart du temps à League of Legends ou Rocket League">
+                <div id="textOverLoisirs" data-text="Jeux Vidéos &#xa;J'aime beaucoup les jeux-vidéos,que ce soit compétitif ou non. Je joue la plupart du temps à League of Legends ou Rocket League">
                 </div>
             </li>
 
             <li>
-                <div class="formation_content">
+                <div id="textOverLoisirs" data-text="Le sport &#xa;J'aime beaucoup le sport, j'ai fais du handball, de la natation, du volleyball et du krav-maga. Actuellement je pratique de la musculation">
                 </div>
             </li>
+
+            <li>
+                <div id="textOverLoisirs" data-text="Lecture &#xa;La lecture fait parti de mes passes temps favori, je lis quelques roman de fantasy, des lights novels, des mangas et des webtoons">
+                </div>
+            </li>
+
+            <li>
+                <div id="textOverLoisirs" data-text="Piano &#xa;je fais de temps en temps du piano.">
+                </div>
+            </li>
+
+            
         </ul>
     </div>
 

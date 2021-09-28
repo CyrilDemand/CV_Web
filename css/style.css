@@ -12,14 +12,16 @@ header{
     text-align: center;
     font-size: 50px;
 }
-
+a{
+    color:white;
+}
 #menu>ul{
     padding: 0px;
     width: 100%;
     background-color: darkolivegreen;
 }
 
-#menu>ul>li{
+#menu>ul>a>li{
     padding-top: 40px;
     padding-bottom: 40px;
     display: inline-block;
@@ -27,11 +29,11 @@ header{
     text-align: center;
 }
 
-#menu>ul>li:hover{
+#menu>ul>a>li:hover{
     background-color: darkgreen;
 }
 
-#moi,.formation, .loisirs{
+#moi,#formation, #loisirs{
     background-color: darkolivegreen;
     margin: auto;
     width: 80%;
