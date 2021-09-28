@@ -1,16 +1,31 @@
 body{
-    background-color: #406334;
+    background-color: #2D3848;
     margin: 0px;
     color: beige;
 }
 
 header{
-    background-color: #406334;
+    background-color: #3A4556;
     height: 200px;
     width: 100%;
     margin: auto;
     text-align: center;
     font-size: 50px;
+}
+
+header button{
+    background-color: #3A4556;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 a{
     color:white;
@@ -18,7 +33,7 @@ a{
 #menu>ul{
     padding: 0px;
     width: 100%;
-    background-color: darkolivegreen;
+    background-color: #3A4556;
 }
 
 #menu>ul>a>li{
@@ -27,19 +42,28 @@ a{
     display: inline-block;
     width: 24%;
     text-align: center;
+    font-size: 25px;
 }
 
 #menu>ul>a>li:hover{
-    background-color: darkgreen;
+    background-color: rgb(21, 32, 43);
 }
 
 #moi,#formation, #loisirs{
-    background-color: darkolivegreen;
+    background-color: #3A4556;
     margin: auto;
     width: 80%;
     text-align: center;
 }
 
+#moi{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#moi p{
+    font-size: large;
+}
 #git{
     height: 40px;
 }

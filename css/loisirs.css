@@ -1,16 +1,21 @@
-#loisirs{
-    height: 500px;
-}
-
 #loisirs li{
-    height: 300px;
+    height: 410px;
 }
 #loisirs ul li{
     display: inline-block;
 }
 
+@media(max-width:767px) {
+    #loisirs ul li{
+        display: table-row;
+    }
+}
+
+#loisirs #jeux_video{
+    background-image: url("../img//jeux-vidéos.jpg");
+}
+
 #loisirs div{
-    background-image: url("https://images.rtl.fr/~c/2000v2000/rtl/www/1176454-des-personnes-jouent-a-un-jeu-video.jpg");
     position: relative;
     width: 400px;
     float: left;
@@ -21,6 +26,20 @@
     background-position: center;
     transition: 0.5s;
 }
+
+#loisirs #sport{
+    background-image: url("../img/musculation.jpg");
+}
+
+#loisirs #lecture{
+    background-image: url("../img/lecture.jpg");
+}
+
+#loisirs #piano{
+    background-image: url("../img/piano.jpg");
+}
+
+
 
 #loisirs div:hover{
     background-size: 110%;
@@ -46,9 +65,5 @@
 #loisirs div:hover:after{
     top: 0;
     padding: 8px;
-}
-
-#loisirs div::first-line{
-    color: #000;
 }
 
