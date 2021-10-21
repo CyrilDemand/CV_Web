@@ -83,8 +83,8 @@ a{
 }
 
 #contact:hover{
-    height: 175px;
-    width: 200px;
+    height: 220px;
+    width: 250px;
     border-radius: 8px;
     background-color: rgb(21, 32, 43);
     transition: 0.5s;
@@ -92,4 +92,5 @@ a{
 
 #contact:hover p{
     visibility:visible;
+    font-size: 20px;
 }
