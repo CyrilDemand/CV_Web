@@ -48,7 +48,7 @@
     transform: translateX(-50%) translateY(-40px);
 }
 
-@media(max-width:1000px) {
+@media(max-width:1700px) {
     #formation ul{
         padding: auto;
     }
