@@ -70,12 +70,12 @@ a{
 
 #contact{
     position: fixed;
-    width: 100px;
-    height: 65px;
+    width: 125px;
+    height: 80px;
     border-radius: 8px;
     background-color: rgb(21, 32, 43);
 }
-#contact h2{
+#contact h1{
     text-align: center;
 }
 #contact p{
@@ -93,4 +93,34 @@ a{
 #contact:hover p{
     visibility:visible;
     font-size: 21px;
+}
+
+@media(max-width:1000px) {      
+    #contact{
+        position: fixed;
+        width: 150px;
+        height: 100px;
+        border-radius: 8px;
+        background-color: rgb(21, 32, 43);
+    }
+    #contact h1{
+        text-align: center;
+        font-size: x-large;
+    }
+    #contact p{
+    visibility: hidden;
+    }
+
+    #contact:hover{
+        height: 300px;
+        width: 400px;
+        border-radius: 8px;
+        background-color: rgb(21, 32, 43);
+        transition: 0.5s;
+    }
+
+    #contact:hover p{
+        visibility:visible;
+        font-size: xx-large;
+    }
 }
