@@ -7,5 +7,6 @@
         "autres",
         "loisirs",
         "propos"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

@@ -1,0 +1,30 @@
+#formulaire h1{
+    text-align: center;
+    margin: 35px 0 20px 0 !important; 
+}
+
+#formulaire{
+    text-align: center;
+    width: 80%;
+    padding: 50px 0px 50px 0px;
+    margin: auto;
+    background-color: #3A4556;
+}
+
+input , textarea , button{
+    margin: 10px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow: -2px;
+    border: 0;
+}
+
+input , textarea {
+    width: 400px;
+    resize: none;
+}
+
+#formulaire button{
+    height: 75px;
+    width: 175px;
+}

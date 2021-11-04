@@ -1,19 +1,40 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #2D3848;
     margin: 0px;
     color: beige;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#0F1626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #2B3B62;
+}
+
 header{
     background-color: #3A4556;
-    height: 200px;
     width: 100%;
     margin: auto;
     text-align: center;
     font-size: 50px;
 }
 
-header button{
+header button, #formulaire button{
     background-color: #3A4556;
     border-radius: 10px;
     border: 4px double #cccccc;
@@ -40,7 +61,7 @@ a{
     padding-top: 40px;
     padding-bottom: 40px;
     display: inline-block;
-    width: 24%;
+    width: 19%;
     text-align: center;
     font-size: 25px;
 }
@@ -49,7 +70,7 @@ a{
     background-color: rgb(21, 32, 43);
 }
 
-#moi,#formation, #loisirs{
+#moi,#projets, #loisirs{
     background-color: #3A4556;
     margin: auto;
     width: 80%;
@@ -68,12 +89,16 @@ a{
     height: 40px;
 }
 
+#mail{
+    font-size: 0px;
+}
 #contact{
     position: fixed;
     width: 125px;
     height: 80px;
     border-radius: 8px;
     background-color: rgb(21, 32, 43);
+    z-index: 5000000;
 }
 #contact h1{
     text-align: center;
@@ -88,6 +113,8 @@ a{
     border-radius: 8px;
     background-color: rgb(21, 32, 43);
     transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #contact:hover p{
@@ -95,6 +122,12 @@ a{
     font-size: 21px;
 }
 
+#projets_container{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+}
 @media(max-width:1000px) {      
     #contact{
         position: fixed;

@@ -5,8 +5,10 @@
     <title>Cyril Demand</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/proSkills.css">
-    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/projets.css">
     <link rel="stylesheet" href="css/loisirs.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <script src="js/formulaire.js"></script>
 </head>
     <body>
     <header>
@@ -18,9 +20,11 @@
         <ul>
             <a href="#moi"><li>à propos de moi</li></a>
             <a href="#compétences"><li>compétences</li></a>
-            <a href="#formation"><li>formation</li></a>
+            <a href="#projets"><li>projets</li></a>
             <a href="#loisirs"><li>loisirs</li></a>
+            <a href="#formulaire"><li>contact</li></a>
         </ul>
+        <script src="js/button.js"></script>
     </div>
 
     <div id="contact">
@@ -31,12 +35,13 @@
     </div>
 
     <div id="moi">
-        <h2>Cyril, 19 ans, étudiant en IUT informatique</h2>
+        <h1>Cyril, 19 ans, étudiant en IUT informatique</h1>
         <p>
             Motivé à l’idée de rejoindre une entreprise spécialisé dans la conception logiciel ou de site internet, <br>
             je suis à la recherche d'un stage qui me permettra de mettre en avant ma passion <br>
             et mes connaissances en programmation orientée objet ou mes connaissances en programmation web.
         </p>
+        <h2 id="mail">Votre mail a bien été envoyé !</h2>
         <a href="https://github.com/CyrilDemand"><img id="git" src="img/git.png" alt="github"></a>
         <a href="https://www.linkedin.com/in/cyril-demand-0a30a918b/"><img id="linkedIn" src="img/linkedIn.png" alt="linkedIN"></a>
         <br>
@@ -44,9 +49,9 @@
 
     <div id="compétences">
         <div id="compPro">
-            <h2>Compétences professionnelles</h2>
+            <h1>Languages</h1>
             <hr>
-            <ul>
+            <ul class="language">
                 <li>
                     <div id="tooltip">
                         <img id="imageComp" src="img/html5.png" alt="html5">
@@ -90,6 +95,18 @@
                 </li>
                 <li>
                     <div id="tooltip">
+                        <img id="imageComp" src="img/cobol.png" alt="cobol">
+                        <div id="content">
+                            <p>cobol</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <h2>Librairies</h2>
+            <hr>
+            <ul>
+                <li>
+                    <div id="tooltip">
                         <img id="imageComp" src="img/java_ee_logo.jpg" alt="java">
                         <div id="content">
                             <p>java EE</p>
@@ -98,9 +115,17 @@
                 </li>
                 <li>
                     <div id="tooltip">
-                        <img id="imageComp" src="img/cobol.png" alt="cobol">
+                        <img id="imageComp" src="img/javafx.png" alt="java">
                         <div id="content">
-                            <p>cobol</p>
+                            <p>javafx</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="tooltip">
+                        <img id="imageComp" src="img/jdbc.png" alt="java">
+                        <div id="content">
+                            <p>java database connectivity</p>
                         </div>
                     </div>
                 </li>
@@ -108,7 +133,7 @@
         </div>
 
         <div id="compPer">
-            <h2>Compétences personnelles</h2>
+            <h1>Compétences personnelles</h1>
             <hr>
             <ul>
                 <li>
@@ -121,9 +146,9 @@
                 </li>
                 <li>
                     <div id="tooltip">
-                        <img id="imageComp" src="img/ponctuel.png" alt="agile">
+                        <img id="imageComp" src="img/décision.jpg" alt="agile">
                         <div id="content">
-                            <p>ponctualité</p>
+                            <p>prise de décision</p>
                         </div>
                     </div>
                 </li>
@@ -147,28 +172,53 @@
         </div>
     </div>
 
-    <div id="formation">
-        <h1>Formation</h1>
-        <ul>
-            <li>
-                <div id="formation_content">
-                    <p>DUT informatique</p>
-                    <p>2020-2022</p>
+    <div id="projets">
+        <h1>Projets</h1>
+        <hr>
+        <div id="projets_container">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="img/mode3d.jpg" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Modélisateur 3d</h2>
+                        <p>projet réalisé durant mon troisième semestre en java et javafx</p>
+                        <a href="https://github.com/CyrilDemand/Modelisation_3D">code source</a>
+                    </div>
                 </div>
-            </li>
-
-            <li>
-                <div id="formation_content">
-                    <p>Baccalauréat Scientifique option Science de L'ingénieurie<p>
-                    <p>2017-2020</p>
-                    <p>mention bien</p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="img/jeu_du_moulin.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Jeu du moulin</h2>
+                        <p>projet réalisé durant mon second semestre en java et javafx</p>
+                        <a href="https://github.com/CyrilDemand/Moulin">code source</a>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="img/color_picker.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h2>color picker</h2>
+                        <p>projet réalisé durant mon second semestre en java et javafx</p>
+                        <a href="https://github.com/CyrilDemand/Color_picker">code source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <div id="loisirs">
         <h1>loisirs</h1>
+        <hr>
         <ul>
             <li>
                 <div id="jeux_video" data-text="Jeux Vidéos &#xa;J'aime beaucoup les jeux-vidéos,que ce soit compétitif ou non. Je joue la plupart du temps à League of Legends ou Rocket League">
@@ -193,6 +243,27 @@
             
         </ul>
     </div>
+    <div id="formulaire">
+        <h1>Voulez vous m'envoyer un mail ?</h1>
+        <form target="_blank" action="https://formsubmit.co/cydemand@gmail.com" method="post">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-group">
+            <div class="form-row">
+                <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button onclick="valide()" type="submit" class="btn btn-lg btn-dark btn-block">Envoyer !</button>
+            <input type="hidden" name="_next" value="https://cyrildemand.github.io/CV_Web/#moi">
 
+        </form>
+        </div>
     </body>
 </html>

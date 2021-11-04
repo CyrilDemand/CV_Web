@@ -19,11 +19,6 @@
         width: 80%;
     }
 
-    #compétences #compPro ul li{
-        display: list-item;
-        list-style: none;
-    }
-
     #compétences #compPro ul li #content{
         margin: auto;
     }
@@ -39,9 +34,10 @@
     }
 }
 
-
 #compétences ul>li{
     display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #tooltip {
@@ -50,11 +46,11 @@
 
 #compétences ul>li #content{
     visibility: hidden;
-    width: 120px;
+    width: auto;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 0px 0;
+    padding: 4px 12px 4px 12px;
     position: absolute;
     z-index: 1;
     bottom: 50%;
@@ -84,8 +80,19 @@
 
 #compPro{
     background-color: #3A4556;
-    width: 50%;
-    margin: 5%;
+    width: 45%;
+    margin: 5% 0% 5% 5%;
+}
+
+#compPro ul{
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: var(--bg-color3);
+    border-radius: 25px 25px 0px 0px;
+    background: #0F1626;
 }
 
 #compPer{
