@@ -109,7 +109,7 @@ a{
 
 #contact:hover{
     height: 220px;
-    width: 250px;
+    width:max-content;
     border-radius: 8px;
     background-color: rgb(21, 32, 43);
     transition: 0.5s;
